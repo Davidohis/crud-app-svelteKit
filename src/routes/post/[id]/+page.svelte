@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	import Button from '@smui/button';
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -32,7 +34,7 @@
 	<div class="card-container">
 		<Card padded>
 			<Textfield variant="outlined" bind:value={valueA} label="Edit Title">
-				<HelperText slot="Edit Title">Helper Text</HelperText>
+				 <HelperText slot="Edit Title">Helper Text</HelperText>
 			</Textfield>
 			<br />
 			<Textfield textarea input$maxlength={2500} bind:value label="Edit Content">
