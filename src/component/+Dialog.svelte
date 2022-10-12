@@ -39,13 +39,15 @@
 			</Textfield>
 			<br />
 			<Textfield textarea input$maxlength={2500} bind:value={content} label="Content">
-				<CharacterCounter slot="internalCounter">0 / 100</CharacterCounter>
+				<CharacterCounter slot="internalCounter">0 / 50</CharacterCounter>
 			</Textfield>
 			<br />
 			<Button on:click={createPost}>Create</Button>
 		</Card>
 	</Content>
 	<Actions>
-		<Button action="accept">Close</Button>
+		<Button action="accept">
+			Close
+		</Button>
 	</Actions>
 </Dialog>
